@@ -79,4 +79,4 @@ while playing:
     if again != 'y':
         playing = False
         print("Thanks for playing! Goodbye!")
-  # Gives the user the choice to play again or not. If they decide not to then the game is ended and theey are shown a goodbye message
+  # Gives the user the choice to play again or not. If they decide not to then the game is ended and they are shown a goodbye message
