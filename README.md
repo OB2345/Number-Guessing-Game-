@@ -1,28 +1,28 @@
 # Number-Guessing-Game-
 CLI Based Python guessing game built with defensive error handling, dynamic hint logic, and replayable session state.
 
-import random # imports random valid number from dataset
+import random # Imports random valid number from dataset
 
 print("====================================")
 print("  Welcome to Guess the Number!")
 print("====================================")
 
-import random # imports random valid number from dataset
-playing = True #shows user is actively playing
-best_score = None # sets no default score
+import random # Imports random valid number from dataset
+playing = True # Shows user is actively playing
+best_score = None # Sets no default score
 while playing:
     number = random.randint(1, 100) #shows parameters of the game
     attempts = 1 #shows how many attempts are added after each attempt
-    max_attempts = 10 #max attempts for the game
+    max_attempts = 10 # Max attempts for the game
     
     print("I'm thinking of a number between 1 and 100.")
     print(f"You have {max_attempts} attempts to guess it!")
- # outlines the rules of the game
+ # Outlines the rules of the game
   
     if best_score is not None:
         print(f"Current High Score: {best_score} attempt(s)")
     print("------------------------------------")
-# will print the highest score if the user has previously played
+# Will print the highest score if the user has previously played
   
  # --- Input Validation for First Guess ---
     valid_guess = False
@@ -32,7 +32,7 @@ while playing:
             valid_guess = True
         except ValueError:
             print("Invalid input! Please enter a whole number.")
-# only allows valid numerials to be entered
+# Only allows valid numerials to be entered
 
  # --- Main Game Loop ---
     while guess != number and attempts < max_attempts:
