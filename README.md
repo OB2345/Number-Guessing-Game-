@@ -54,7 +54,7 @@ while playing:
                 valid_guess = True
             except ValueError:
                 print("Invalid input! Please enter a whole number.")
- # Reiterates that teh guess needs to be a whole numerical value
+ # Reiterates that the guess needs to be a whole numerical value
         attempts += 1 #adds +1 to attempt value after a guess
 
  # --- Round Outcome & High Score ---
